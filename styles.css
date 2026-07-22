@@ -5,6 +5,10 @@
     font-family:Arial, sans-serif;
 }
 
+body{
+    background:#f5f7fb;
+}
+
 /* ================= TOP BAR ================= */
 
 .top-bar{
@@ -25,6 +29,11 @@
     border-radius:5px;
     cursor:pointer;
     font-weight:bold;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    background:#6c9d34;
 }
 
 /* ================= HEADER ================= */
@@ -39,8 +48,8 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#fff;
     gap:15px;
+    color:#fff;
 }
 
 .logo i{
@@ -48,7 +57,7 @@
 }
 
 .logo h1{
-    font-size:45px;
+    font-size:42px;
 }
 
 .header-right{
@@ -91,8 +100,8 @@
 }
 
 .navbar ul{
-    display:flex;
     list-style:none;
+    display:flex;
     gap:40px;
 }
 
@@ -126,13 +135,17 @@
 }
 
 .start-btn{
-    padding:18px 45px;
+    padding:18px 40px;
     background:#0b57f5;
     color:#fff;
     border:none;
     border-radius:8px;
     cursor:pointer;
-    font-size:18px;
+    font-size:17px;
+}
+
+.start-btn:hover{
+    background:#0847c7;
 }
 
 /* ================= BANNER ================= */
@@ -142,12 +155,12 @@
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
     url("s3.png");
-
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
-
     position:relative;
+
+    /* Space for service cards */
+    margin-bottom:220px;
 }
 
 .banner-content{
@@ -170,10 +183,10 @@
 .custom-btn{
     width:190px;
     height:60px;
-    border:1px solid #0b57f5;
+    border:none;
+    border-radius:5px;
     background:#fff;
     color:#0b57f5;
-    border-radius:5px;
     margin:40px auto;
 
     display:flex;
@@ -214,7 +227,7 @@
 
 .services{
     position:absolute;
-    bottom:-180px;
+    bottom:-170px;
     width:100%;
 
     display:flex;
@@ -230,10 +243,8 @@
     padding:35px;
     position:relative;
     overflow:hidden;
-
     box-shadow:0 15px 40px rgba(0,0,0,.15);
-
-    transition:.4s;
+    transition:.3s;
 }
 
 .card:hover{
@@ -243,9 +254,8 @@
 .circle{
     width:160px;
     height:160px;
-    border:7px solid #8bb1ff;
+    border:7px solid #9ec0ff;
     border-radius:50%;
-
     position:absolute;
     top:-80px;
     right:-80px;
@@ -258,51 +268,114 @@
 }
 
 .card h2{
-    font-size:22px;
-    color:#222;
     margin-bottom:20px;
+    color:#222;
 }
 
 .card p{
     color:#777;
-    line-height:30px;
-    margin-bottom:35px;
+    line-height:28px;
+    margin-bottom:30px;
 }
 
 .card a{
-    width:180px;
-    height:55px;
-
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-
+    display:inline-block;
     text-decoration:none;
-
     color:#0b57f5;
-
-    border:2px solid #0b57f5;
-
-    position:relative;
-    overflow:hidden;
-
     font-weight:bold;
 }
 
-.card a::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-
-    width:0;
-    height:0;
-
-    border-top:45px solid #0b57f5;
-    border-right:45px solid transparent;
+.card a:hover{
+    color:#0847c7;
 }
 
-.card a:hover{
+/* ================= ABOUT ================= */
+
+.about{
+    width:90%;
+    margin:80px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:10px;
+    display:block;
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h4{
+    color:#0b57f5;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.about-content h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:25px;
+    color:#222;
+}
+
+.about-content h1 span{
+    color:#0b57f5;
+}
+
+.about-content p{
+    font-size:18px;
+    color:#777;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.about-content ul{
+    list-style:none;
+}
+
+.about-content ul li{
+    margin-bottom:18px;
+    font-size:21px;
+}
+
+.about-content ul li i{
+    color:#0b57f5;
+    margin-right:12px;
+}
+
+.info-box{
+    margin-top:35px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:25px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.icon{
+    width:70px;
+    height:70px;
     background:#0b57f5;
     color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+}
+
+.text h3{
+    font-size:26px;
+    color:#222;
 }
