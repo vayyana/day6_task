@@ -380,6 +380,7 @@ body{
     color:#222;
 }
 
+
 /* Newsletter */
 
 .newsletter{
@@ -425,6 +426,111 @@ body{
 .subscribe button:hover{
     background:#0c43c8;
 }
+
+    /* Team-members-section */
+
+.team-members-section{
+    width:92%;
+    margin:80px auto;
+}
+
+.team-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.team-title h2{
+    font-size:55px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.team-title p{
+    max-width:700px;
+    margin:auto;
+    color:#777;
+    line-height:32px;
+    font-size:20px;
+}
+
+/* Desktop */
+.team-members-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+.member-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.member-card:hover{
+    transform:translateY(-8px);
+}
+
+.member-image{
+    position:relative;
+}
+
+.member-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+}
+
+.share-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.member-content{
+    text-align:center;
+    padding:35px 25px;
+}
+
+.member-content h3{
+    font-size:24px;
+    margin-bottom:12px;
+    color:#222;
+}
+
+.member-content span{
+    color:#888;
+    font-size:18px;
+}
+
+.member-content hr{
+    margin:25px 0;
+    border:none;
+    height:1px;
+    background:#ddd;
+}
+
+.member-content p{
+    color:#777;
+    font-size:18px;
+}
+
+.member-content i{
+    margin-right:10px;
+}
+
+
 
 /* Footer */
 
@@ -543,3 +649,20 @@ body{
 .copyright-a a:hover{
     color: #1557ff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
